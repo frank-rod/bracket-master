@@ -1,0 +1,32 @@
+name: frontend
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'frontend/**'
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Setup yarn
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: 'yarn'
+          cache-dependency-path: frontend/yarn.lock
+
+      - name: Install npm modules
+        run: yarn
+        working-directory: frontend
+
+      - name: Run prettier, lint, jest checks
+        run: yarn test
+        working-directory: frontend
