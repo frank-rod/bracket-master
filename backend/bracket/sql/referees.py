@@ -296,3 +296,4 @@ async def update_referee_assignment(
     )
     result = await database.fetch_one(query)
     return RefereeAssignment.model_validate(result) if result else None
+

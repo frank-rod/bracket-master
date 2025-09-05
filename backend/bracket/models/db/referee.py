@@ -66,3 +66,4 @@ class RefereeScheduleConflict(BaseModel):
     conflict_type: str  # "overlap", "too_many_matches", "not_available"
     match_ids: list[int]
     description: str
+

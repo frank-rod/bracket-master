@@ -82,3 +82,4 @@ class ScheduleSuggestion(BaseModel):
     referee_availability: dict  # Disponibilidad de árbitros para cada slot
     conflict_score: float  # Puntuación de conflictos (menor es mejor)
     recommendation_reason: str
+

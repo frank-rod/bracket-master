@@ -314,3 +314,4 @@ async def get_schedule_availability(
         "availability_percentage": (len(available_slots) / len(all_slots) * 100) if all_slots else 0,
         "slots_by_court": slots_by_court,
     }
+

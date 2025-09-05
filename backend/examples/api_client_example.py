@@ -406,3 +406,4 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"\n❌ Error: {e}")
         print("Asegúrate de que el servidor esté ejecutándose y las credenciales sean correctas")
+

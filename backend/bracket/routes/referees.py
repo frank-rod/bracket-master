@@ -239,3 +239,4 @@ async def get_referee_schedule_conflicts(
         "conflicts": [],
         "message": "Función de detección de conflictos pendiente de implementación completa"
     }
+

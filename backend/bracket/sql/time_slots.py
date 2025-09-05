@@ -300,3 +300,4 @@ async def optimize_schedule(
         "message": "La optimización de calendario está pendiente de implementación completa",
         "suggestions": [],
     }
+

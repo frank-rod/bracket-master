@@ -96,3 +96,4 @@ def downgrade() -> None:
     
     op.drop_index(op.f('ix_referees_id'), table_name='referees')
     op.drop_table('referees')
+
